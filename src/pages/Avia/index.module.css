@@ -1,0 +1,86 @@
+.inputWrapper {
+    display: flex;
+    gap: 1.625rem;
+
+    padding: 1rem 1.875rem;
+
+    background-color: #5c87db;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.inputItem {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.75rem;
+    color: #ffffff;
+}
+
+.input {
+    display: flex;
+    gap: 0.75rem;
+
+    min-width: 13rem;
+
+    padding: 0.75rem;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #5c5c5c;
+
+    border: none;
+    border-radius: 0.625rem;
+}
+
+.inputItem:last-of-type .input[type="date"]:last-of-type::after {
+    content: "";
+
+    position: absolute;
+    bottom: 1.125rem;
+    left: -1.625rem;
+
+    width: 1.625rem;
+    height: 0.0625rem;
+
+    border-bottom: 0.125rem dotted #ffffff;
+}
+
+.input::placeholder {
+    color: #e0e1e3;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem 1.875rem;
+
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 0 14px rgba(112, 121, 153, 0.3);
+}
+
+.button {
+    padding: 0.5rem 1.875rem;
+
+    font-family: inherit;
+    font-size: 0.875rem;
+    color: #ffffff;
+
+    background-color: #5c87db;
+    border: none;
+    border-radius: 0.625rem;
+}
+
+.input::-webkit-datetime-edit {
+    color: #e0e1e3;
+}
+
+.input::-webkit-calendar-picker-indicator {
+    order: -1;
+    background-image: url("../../assets/icons/calendar.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
