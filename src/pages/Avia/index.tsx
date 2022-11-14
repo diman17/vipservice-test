@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { Dispatch, FormEvent, SetStateAction, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "../../hooks";
@@ -27,7 +28,7 @@ const Avia = () => {
     };
 
     const validateTextInput = (value: string, cb: Dispatch<SetStateAction<string>>) => {
-        if (/^[а-я]+$/i.test(value) || value === "") cb(value);
+        if (/^[а-я\s]+$/i.test(value) || value === "") cb(value);
     };
 
     return (
@@ -67,7 +68,7 @@ const Avia = () => {
                         Туда
                     </label>
                     <input
-                        className={styles.input}
+                        className={there ? classNames(styles.input, styles.active) : styles.input}
                         id="there"
                         type="date"
                         value={there}
@@ -79,7 +80,7 @@ const Avia = () => {
                         Обратно
                     </label>
                     <input
-                        className={styles.input}
+                        className={back ? classNames(styles.input, styles.active) : styles.input}
                         id="back"
                         type="date"
                         value={back}

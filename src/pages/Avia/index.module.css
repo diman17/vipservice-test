@@ -101,9 +101,17 @@
     color: #e0e1e3;
 }
 
+.active.input::-webkit-datetime-edit {
+    color: #5c5c5c;
+}
+
 .input::-webkit-calendar-picker-indicator {
     order: -1;
     background-image: url("../../assets/icons/calendar.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+
+.active.input::-webkit-calendar-picker-indicator {
+    background-image: url("../../assets/icons/calendarActive.svg");
 }
