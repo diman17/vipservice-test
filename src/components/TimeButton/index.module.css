@@ -1,0 +1,31 @@
+.button {
+    padding: 0.375rem 0.5rem 0.375rem 0.25rem;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #5c5c5c;
+
+    background: transparent;
+
+    border: 0.0625rem solid #b7bac1;
+    border-radius: 0.625rem;
+
+    transition: all 150ms ease;
+
+    cursor: pointer;
+}
+
+.start {
+    font-size: 1.125rem;
+}
+
+.active {
+    padding: 0.625rem 1.125rem 0.625rem 1rem;
+    margin: -0.25rem -0.625rem -0.25rem -0.75rem;
+
+    color: #232323;
+
+    background-color: #dde3ee;
+
+    border: 0.0625rem solid #dde3ee;
+}
