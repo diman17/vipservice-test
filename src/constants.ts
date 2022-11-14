@@ -1,4 +1,5 @@
-import { Time } from "./types";
+import { Airline, Time } from "./types";
+import logoImage from "./assets/images/logo.png";
 
 export const times: Time[] = [
     {
@@ -20,3 +21,10 @@ export const times: Time[] = [
         finish: "13:05",
     },
 ];
+
+export const airline: Airline = {
+    name: "S7 Airlines",
+    logoPath: logoImage,
+};
+
+export const price = 4150;

@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { Dispatch, SetStateAction } from "react";
-import { times } from "../../pages/Info/constants";
-import { Time } from "../../pages/Info/types";
+import { times } from "../../constants";
+import { Time } from "../../types";
 import styles from "./index.module.css";
 
 type TimeButtonProps = {

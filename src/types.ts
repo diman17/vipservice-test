@@ -4,3 +4,8 @@ export type Time = {
     start: string;
     finish: string;
 };
+
+export type Airline = {
+    name: string;
+    logoPath: string;
+};
