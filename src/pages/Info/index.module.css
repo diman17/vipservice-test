@@ -6,6 +6,19 @@
     border-radius: 1rem;
 }
 
+.flight {
+    display: flex;
+}
+
+.flight:last-of-type {
+    border-top: 0.0625rem dotted #8ba5d8;
+    border-top-left-radius: 1rem;
+}
+
+.flight:last-of-type .wrapper {
+    margin-top: -0.0625rem;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
