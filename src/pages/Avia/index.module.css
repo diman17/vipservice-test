@@ -53,6 +53,10 @@
     color: #e0e1e3;
 }
 
+.input:focus {
+    outline-color: #5c87db;
+}
+
 .buttonWrapper {
     display: flex;
     justify-content: flex-end;
@@ -72,6 +76,25 @@
     background-color: #5c87db;
     border: none;
     border-radius: 0.625rem;
+
+    transition: all 150ms ease;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3e67b7;
+}
+
+.button:active {
+    background-color: #5c87db;
+    color: rgba(256, 255, 255, 0.5);
+}
+
+.button:disabled {
+    background-color: #b7bac1;
+
+    pointer-events: none;
 }
 
 .input::-webkit-datetime-edit {
