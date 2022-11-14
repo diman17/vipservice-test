@@ -1,0 +1,220 @@
+.container {
+    display: flex;
+
+    box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+
+    border-radius: 1rem;
+}
+
+.wrapperAirline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag {
+    display: block;
+
+    padding: 0.375rem 1.5rem;
+    margin-bottom: 2.125rem;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ffffff;
+
+    background-color: #8ba5d8;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.airline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+}
+
+.logo {
+    margin-bottom: 0.5rem;
+}
+
+.name {
+    font-size: 1.125rem;
+    color: #5c5c5c;
+}
+
+.wrapperInfo {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem 1.25rem 2rem 1.625rem;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    margin-bottom: 2.75rem;
+}
+
+.wrapperDetails {
+    position: relative;
+    top: 0.75rem;
+}
+
+.time {
+    margin: 0;
+    margin-bottom: 0.5rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #232323;
+}
+
+.city {
+    margin: 0;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #5c5c5c;
+}
+
+.date {
+    margin: 0;
+
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #5c5c5c;
+}
+
+.wrapperDrawing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drawing {
+    display: flex;
+    justify-content: space-between;
+
+    min-width: 270px;
+}
+
+.code {
+    margin: 0;
+    margin-bottom: 0.5rem;
+
+    font-size: 0.875rem;
+    color: #b7bac1;
+}
+
+.line {
+    position: relative;
+
+    display: block;
+
+    margin-bottom: 0.5rem;
+
+    width: 90%;
+    height: 0.0625rem;
+
+    background-color: #b7bac1;
+}
+
+.line::before,
+.line::after {
+    content: "";
+
+    position: absolute;
+
+    width: 0.5rem;
+    height: 0.5rem;
+
+    border-radius: 50%;
+    background-color: #b7bac1;
+}
+
+.line::before {
+    top: -0.25rem;
+    left: -0.25rem;
+}
+
+.line::after {
+    top: -0.25rem;
+    right: -0.25rem;
+}
+
+.duration {
+    margin: 0;
+
+    font-size: 0.875rem;
+    color: #b7bac1;
+}
+
+.baggage {
+    display: flex;
+    gap: 0.625rem;
+    align-items: flex-end;
+}
+
+.timeList {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.timeList li {
+    margin: 0;
+
+    list-style-type: none;
+}
+
+.timeButton {
+    padding: 0.375rem 0.5rem 0.375rem 0.25rem;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #5c5c5c;
+
+    background: transparent;
+
+    border: 0.0625rem solid #b7bac1;
+    border-radius: 0.625rem;
+
+    transition: all 150ms ease;
+
+    cursor: pointer;
+}
+
+.start {
+    font-size: 1.125rem;
+}
+
+.active {
+    padding: 0.625rem 1.125rem 0.625rem 1rem;
+
+    color: #232323;
+
+    background-color: #dde3ee;
+
+    border: none;
+}
+
+.wrapperPrice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 2rem 0 3rem;
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: #232323;
+
+    border-left: 0.0625rem solid #dde3ee;
+}
